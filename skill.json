@@ -1,0 +1,42 @@
+{
+  "name": "genpark-autonomous-b2b-procurement-price-negotiator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous B2B procurement contract price negotiator utilizing multi-issue Pareto concession frontiers.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "pactum-ai",
+    "nibble-ai",
+    "procurement-negotiation",
+    "b2b-commerce",
+    "contract-negotiator"
+  ],
+  "inputs": {
+    "initial_quote_usd": {
+      "type": "number"
+    },
+    "volume_units": {
+      "type": "integer"
+    },
+    "target_unit_price_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "negotiation_session_id": {
+      "type": "string"
+    },
+    "agreed_contract_usd": {
+      "type": "number"
+    },
+    "negotiated_savings_usd": {
+      "type": "number"
+    },
+    "contract_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
